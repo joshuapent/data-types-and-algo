@@ -2,7 +2,7 @@
 
 const nemo = ['nemo'];
 const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank']
-const large = new Array
+const large = new Array(100).fill('nemo');
 
 function findNemo(array) {
   let t0 = performance.now();
@@ -16,5 +16,17 @@ function findNemo(array) {
 }
 
 // findNemo(nemo);
-findNemo(nemo);
+// findNemo(everyone); // O(n) --> Linear Time
+
+function compressFirstBox(boxes) {
+  console.log(boxes[0])
+} // O(1) Constant Time
+
+// compressFirstBox([2, 3, 4, 5])
+// compressFirstBox([6, 7])
+// compressFirstBox([8])
+
+function logFirstTwoBoxes(boxes) {
+  console.log(boxes[0], boxes[1]);
+} //O(2) Constant Time which is always O(1)
 

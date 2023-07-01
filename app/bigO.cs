@@ -17,12 +17,29 @@ namespace MyApp // Note: actual namespace depends on the project name.
             }
           }
         }
+        static void compressFirstBox(int[] array)
+        {
+          Console.WriteLine(array[0]);
+        }
+        static void logFirstTwoBoxes(int[] array)
+        {
+          Console.WriteLine(array[0]);
+          Console.WriteLine(array[1]);
+        }
         static void Main(string[] args)
         {
             string[] nemo = {"nemo"};
             string[] everyone = {"dory", "bruce", "marlin", "nemo", "gill", "bloat", "nigel", "squirt", "darla", "hank"};
-            findNemo(everyone);
-            Console.WriteLine("Hello World!");
+            int[] numOne = {1};
+            int[] numTwo = {2, 3};
+            int[] numThree = {4, 5, 6, 7, 8, 9};
+            // compressFirstBox(numOne);
+            // compressFirstBox(numTwo);
+            // compressFirstBox(numThree);
+            // findNemo(everyone);
+            // Console.WriteLine("Hello World!");
+            // logFirstTwoBoxes(numTwo);
+            // logFirstTwoBoxes(numThree);
         }
     }
 }
