@@ -30,3 +30,28 @@ function logFirstTwoBoxes(boxes) {
   console.log(boxes[0], boxes[1]);
 } //O(2) Constant Time which is always O(1)
 
+function nestedLoop(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      console.log(array[i], array[j]);
+    }
+  }
+}
+
+// nestedLoop([1, 2, 3, 4]) //O(n^2)
+
+function printSumPairs(nums) {
+  console.log('The numbers are: ');
+  nums.forEach((num) => {
+    console.log(num)
+  })
+
+  console.log('And their sums are: ');
+  nums.forEach((num) => {
+    nums.forEach((num2) => {
+      console.log(num + num2)
+    });
+  });
+}
+
+printSumPairs([1, 2])

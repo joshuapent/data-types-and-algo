@@ -26,6 +26,32 @@ namespace MyApp // Note: actual namespace depends on the project name.
           Console.WriteLine(array[0]);
           Console.WriteLine(array[1]);
         }
+        static void nestedLoop(int[] array)
+        {
+          for (int i = 0; i < array.Length; i++)
+          {
+            for (int j = 0; j < array.Length; j++)
+            {
+              Console.WriteLine(array[i] + " " + array[j]);
+            }
+          }
+        }
+        static void printSumPairs(int[] nums)
+        {
+          Console.WriteLine("The numbers are: ");
+          foreach(int num in nums)
+          {
+            Console.WriteLine(num);
+          }
+          Console.WriteLine("And their sums are: ");
+          foreach(int num in nums)
+          {
+            foreach(int num2 in nums)
+            {
+              Console.WriteLine(num + num2);
+            }
+          }
+        }
         static void Main(string[] args)
         {
             string[] nemo = {"nemo"};
@@ -40,6 +66,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             // Console.WriteLine("Hello World!");
             // logFirstTwoBoxes(numTwo);
             // logFirstTwoBoxes(numThree);
+            // nestedLoop(numThree);
+            printSumPairs(numTwo);
         }
     }
 }
