@@ -54,4 +54,28 @@ function printSumPairs(nums) {
   });
 }
 
-printSumPairs([1, 2])
+// printSumPairs([1, 2]) // O(n^2)
+
+// O(n!) Factorial Time
+
+//memory (space complexity):
+
+//heap - where variables are stored
+//stack - where functions are stored
+
+function myFunc(n) {
+  for (let i = 0; i < n.length; i++) {
+    console.log("Function being logged.")
+  } // space complexity of O(1)
+}
+// myFunc([1, 2, 3])
+
+function arraySwap(n) {
+  let array = [];
+  for (let i = 0; i < n.length; i++) {
+    array[i] = 'Test'
+  }
+  return array; // space complexity of O(n)
+}
+
+// arraySwap(3)

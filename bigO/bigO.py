@@ -41,4 +41,4 @@ def printSumPairs(nums):
         for num2 in nums:
             print(num + num2)
 
-printSumPairs([1, 2])
+# printSumPairs([1, 2])
