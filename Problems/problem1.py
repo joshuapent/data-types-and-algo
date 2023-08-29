@@ -17,11 +17,16 @@ print(result)
 def compArrays2(arrayA, arrayB):
   map = {}
   for num in arrayA:
-      map[num] = True
+    map[num] = True
   for num in arrayB:
-    
-    print(map)
+    try:
+       map[num]
+    except:
+      pass
+    else:
+       return True
   return False
 
 
-compArrays2(array1, array2)
+result2 = compArrays2(array1, array3)
+print(result2)
