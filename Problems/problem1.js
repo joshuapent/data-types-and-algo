@@ -15,5 +15,20 @@ function compArrays(arrayA, arrayB) {
   return false;
 }
 
-let result = compArrays(array2, array3)
+function compArrays2(arrayA, arrayB) {
+  let map = {};
+  for (let i = 0; i < arrayA.length; i++) {
+    const iterable = arrayA[i];
+    map[iterable] = true;
+  }
+  for (let i = 0; i < arrayB.length; i++) {
+    if (map[arrayB[i]]) {
+      return true;
+    }
+  }
+  return false;
+  console.log(map)
+}
+
+let result = compArrays2(array2, array3)
 console.log(result) // bigO is O(n^2)

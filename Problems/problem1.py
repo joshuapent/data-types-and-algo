@@ -13,3 +13,15 @@ def compArrays(arrayA, arrayB):
 
 result = compArrays(array1, array3)
 print(result)
+
+def compArrays2(arrayA, arrayB):
+  map = {}
+  for num in arrayA:
+      map[num] = True
+  for num in arrayB:
+    
+    print(map)
+  return False
+
+
+compArrays2(array1, array2)
