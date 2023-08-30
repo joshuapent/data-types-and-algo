@@ -1,3 +1,7 @@
 strings = ['a', 'b', 'c', 'd']
 
-print(strings[2])
+strings.append('e')
+strings.pop()
+strings.insert(0, 'x')
+
+print(strings)
