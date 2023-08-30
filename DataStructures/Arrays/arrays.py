@@ -4,7 +4,7 @@ strings.append('e')
 strings.pop()
 strings.insert(0, 'x')
 
-print(strings)
+# print(strings)
 
 class Objects:
     def __init__(self, name):
@@ -12,7 +12,7 @@ class Objects:
 
 new_object = Objects("buic")
 
-print(new_object.name)
+# print(new_object.name)
 
 class Array:
   def __init__(self):
@@ -28,12 +28,33 @@ class Array:
     del self.data[self.length-1]
     self.length-=1 
     return 
+  def delete(self, index):
+     item = self.data[index]
+     self.shift_items(index)
+  def shift_items(self, index):
+    for item in self.data:
+      self.data[index] = self.data[index+1]
+      index+=1
+    del self.data[self.length-1]
+    self.length-=1
 
-
+ 
 new_array = Array()
 new_array.push('hi')
 new_array.push('you')
 new_array.pop()
 new_array.pop()
-print(new_array.data, new_array.length)
+# print(new_array.data, new_array.length)
+
+def reverse_string(string):
+  if type(string) == type(''):
+    new_string = ''
+    idx = len(string)
+    for letter in string:
+      print(letter)
+      new_string += string[idx-1]
+      idx-=1
+    return new_string
+
+print(reverse_string('there'))
 
