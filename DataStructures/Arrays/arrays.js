@@ -9,3 +9,16 @@ strings.splice(2, 0, 'v')
 
 strings[2]
 console.log(strings)
+
+class Array {
+  constructor() {
+    this.length = 0;
+    this.data = {};
+  }
+  get(index) {
+    return this.data[index]
+  }
+}
+
+const newArray = new Array ();
+console.log(newArray.get(0))
