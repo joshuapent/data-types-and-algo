@@ -58,3 +58,14 @@ def reverse_string(string):
 
 print(reverse_string('there'))
 
+def merge_sorted_arrays(arr1, arr2):
+  array = arr1 + arr2
+  array2 = []
+  for num in array:
+    if array2 == []:
+      array2[0] = num
+    elif num > array2[len(array2)]:
+      
+      array2[len(array2)]
+
+merge_sorted_arrays([1, 6], [2, 9])

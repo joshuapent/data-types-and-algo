@@ -49,11 +49,23 @@ newArray.delete(1)
 // console.log(newArray.get(0))
 
 function stringReversal(string) {
-  let reversed = ''
+  let reversed = '';
   for (let i = string.length; i > 0; i--) {
-    reversed+= string[i-1]
+    reversed+= string[i-1];
   }
-  console.log(reversed)
+  console.log(reversed);
 }
 
-stringReversal('happy')
+stringReversal('happy');
+
+function mergeSortedArrays(array1, array2) {
+  const mergedArray = [];
+  let array1Item = array1[0]
+  let array2Item = array2[0]
+
+  while (array1Item || array2Item) {
+     
+  }
+  
+  return mergedArray
+}
